@@ -1,0 +1,15 @@
+package singletonDesignPattern;
+
+public class ThreadSafeDemo {
+	
+	private static ThreadSafeDemo instance;
+	
+	private ThreadSafeDemo(){}
+	
+	public static synchronized ThreadSafeDemo getInstance() {
+		if (instance == null) {
+			instance = new ThreadSafeDemo();
+		}
+		return instance;
+	}
+}

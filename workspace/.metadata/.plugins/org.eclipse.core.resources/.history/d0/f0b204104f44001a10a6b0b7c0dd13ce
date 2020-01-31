@@ -1,0 +1,5 @@
+package singletonDesignPattern;
+
+public class ThreadSafeDemo {
+
+}
