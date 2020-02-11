@@ -8,9 +8,9 @@ public class DatabaseConnection {
 	
 	private static DatabaseConnection instance;
 	private Connection connection;
-	private String url = "jdbc:mysql://c7vm1:3306/demo";
+	private String url = "jdbc:mysql://localhost:3306/demo";
 	private String user = "dbadmin";
-	private String password = "dbpass";
+	private String password = "pass";
 	
 	private DatabaseConnection() throws SQLException {
 		try {

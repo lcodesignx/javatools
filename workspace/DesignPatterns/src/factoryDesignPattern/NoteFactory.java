@@ -2,7 +2,7 @@ package factoryDesignPattern;
 
 public class NoteFactory {
 	
-	public static Note getTitle(String title) {
+	public static Note createNote(String title) {
 		
 		if ("PlainNote".equalsIgnoreCase(title)) {
 			return new PlainNote(title);

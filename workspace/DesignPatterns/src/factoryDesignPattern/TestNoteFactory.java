@@ -4,9 +4,9 @@ public class TestNoteFactory {
 
 	public static void main(String[] args) {
 		// create note object by calling note factory class
-		Note plainNote = NoteFactory.getTitle("PlainNote");
-		Note richNote = NoteFactory.getTitle("RichNote");
-		Note outlineNote = NoteFactory.getTitle("OutlineNote");
+		Note plainNote = NoteFactory.createNote("PlainNote");
+		Note richNote = NoteFactory.createNote("RichNote");
+		Note outlineNote = NoteFactory.createNote("OutlineNote");
 		
 		// display notes
 		System.out.println(plainNote);
